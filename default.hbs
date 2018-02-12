@@ -24,7 +24,10 @@
       {{!-- The footer at the very bottom of the screen --}}
       <footer class="site-footer outer">
         <div class="site-footer-content inner">
-          <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
+          <section class="copyright">
+            <a href="{{@blog.url}}">Voyage Voyage</a> &copy; {{date format="YYYY"}}
+          </section>
+
           <nav class="site-footer-nav">
             <a href="{{@blog.url}}">Homepage</a>
             {{#if @blog.facebook}}<a href="{{facebook_url @blog.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
@@ -40,9 +43,9 @@
         <a class="subscribe-overlay-close" href="#"></a>
         <div class="subscribe-overlay-content">
           {{#if @blog.logo}}
-              <img class="subscribe-overlay-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+              <img class="subscribe-overlay-logo" src="{{@blog.logo}}" alt="Voyage Voyage" />
           {{/if}}
-          <h1 class="subscribe-overlay-title">Subscribe to {{@blog.title}}</h1>
+          <h1 class="subscribe-overlay-title">Subscribe to Voyage Voyage</h1>
           <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
           {{subscribe_form placeholder="youremail@example.com"}}
         </div>
